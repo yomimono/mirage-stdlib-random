@@ -1,0 +1,7 @@
+description = "Mirage Random implementation using Random"
+version = "%%VERSION_NUM%%"
+requires = "cstruct mirage-types-lwt"
+archive(byte) = "stdlibrandom.cma"
+archive(native) = "stdlibrandom.cmxa"
+plugin(byte) = "stdlibrandom.cma"
+plugin(native) = "stdlibrandom.cmxs"
