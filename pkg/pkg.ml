@@ -4,5 +4,5 @@
 open Topkg
 
 let () =
-  Pkg.describe "stdlibrandom" @@ fun _ ->
+  Pkg.describe "mirage-stdlib-random" @@ fun _ ->
   Ok [ Pkg.mllib "src/stdlibrandom.mllib" ]

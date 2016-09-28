@@ -1,4 +1,6 @@
 
+type buffer = Cstruct.t
+
 let generate n =
   let b = Cstruct.create n in
   for i = 0 to pred n do
