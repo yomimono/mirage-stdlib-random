@@ -4,5 +4,7 @@
 open Topkg
 
 let () =
-  Pkg.describe "mirage-stdlib-random" @@ fun _ ->
+  let lint_deps_excluding = Some ["mirage-types-lwt" ; "mirage-types"] in
+  let opams = [ Pkg.opam_file "opam" ~lint_deps_excluding ] in
+  Pkg.describe ~opams "mirage-stdlib-random" @@ fun _ ->
   Ok [ Pkg.mllib "src/stdlibrandom.mllib" ]
