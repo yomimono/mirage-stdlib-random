@@ -1,7 +1,9 @@
 
 type buffer = Cstruct.t
 
-let generate n =
+type g = unit
+
+let generate ?g:_g n =
   let b = Cstruct.create n in
   for i = 0 to pred n do
     Cstruct.set_uint8 b i (Random.int 256)
