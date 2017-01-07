@@ -2,5 +2,5 @@
 
 %%VERSION%%
 
-Provide random byte vectors (the V1_LWT.RANDOM interface) using the Random
+Provide random byte vectors (the Mirage_types_lwt.RANDOM interface) using the Random
 interface.
